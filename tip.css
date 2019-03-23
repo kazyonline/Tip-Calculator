@@ -1,0 +1,60 @@
+form{
+	width: 350px;
+	height:450px;
+	position: relative;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	margin: 0 auto;
+	border: solid 1px black;
+	padding: 10px;
+	font-family: "Arial",helvetica, san-serif;
+	background-color: rgb(228,224,224);
+}
+button{
+	width: 200px;
+	height:50px;
+	border-radius: 5px;
+	position: absolute;
+	top: 320px;
+	left: 75px;
+	background-color: rgb(133,0,0);
+	color: white;
+	font-weight: bold;
+	
+	
+}
+input{
+	height: 30px;
+	width: 250px;
+	margin-right: 10px
+}
+ select{
+	height: 40px;
+	width: 250px;
+	font-weight: bold;
+	font-size: large;
+	margin-right: 10px}
+ .header{
+ 	width: 350px;
+	color: white;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Lucida Sans Unicode",georgia;
+    background-color: black;
+    margin: 0 auto;
+    padding: 11px;
+    border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+    
+}
+.calculator{
+	background: orange;
+}
+#calculate{
+	position: absolute;
+	top: 400px;
+	left: 75px;
+	color: blue;
+	font-size: 20px;
+	font-weight: bold;
+}
