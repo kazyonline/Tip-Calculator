@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="tip.css"/>
+<script type="text/javascript">
+	function calculate(){
+	var bill=document.getElementById("bill").value;
+	var people=document.getElementById("people").value;
+	var e=document.getElementById("rating");
+	var rating=e.options[e.selectedIndex].value;
+	var tip = bill*rating/people;
+	document.getElementById("calculate").innerHTML= `Your tip is ${'$'+ tip}`;
+}
+</script>
+</head>
+
+<body>
+<div class="calculator">
+   <p class="header">TIP CALCULATOR</p>
+   <form>
+    
+    <p>How much was your bill?</p>
+      $ <input type="text" id="bill">
+    <p>How was your service?</p>
+    <select id="rating">
+    	<option value="0.3">30%-Outstanding</option>
+        <option value="0.2">20%-Good</option>
+        <option value="0.15">15%-It was OK</option>
+        <option value="0.10">10%-Bad</option>
+        <option value="0.05">5%-Terrible</option>
+    </select>
+    <p>How many people are sharing the bill?</p>
+      <input type="text" id="people">people<br>
+      <button type="button" onclick="calculate()">CALCULATE</button>
+      <div id="calculate" ></div>
+  </form>	
+
+</div>
+
+</body>
